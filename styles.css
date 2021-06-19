@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: darkslategrey;
+    color: #fff;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+
+#grid-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    background: black;
+}
+
+#gameover {
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    font-size: 4rem;
+    background-color:purple;
+    border: 5px solid black;
+    display: none;
+}
+
+.square {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.snek {
+    background-color: green;
+}
+
+.apple {
+    background-color: red;
+}
+
+#mobile-controls {
+    display: none
+}
+
+#up {
+    display: block;
+    margin: 10px auto;
+}
+
+#down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#left {
+    margin-right: 100px;
+    margin-bottom: 0;
+}
+
+#right {
+    margin-bottom: 0;
+}
+
+button {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: navy;
+    border-radius: 20px;
+    border: 2px solid grey;
+    
+}
+
+
+#start {
+    font-size: 2rem;
+    color: navy;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    outline: none;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+.note {
+    width: 600px;
+    font-size: 2rem;
+}
+
+@media (max-width: 1080px) {
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        #grid-container {
+            margin-bottom: 20px;
+        }
+
+        #mobile-controls {
+            display: block;
+        }
+
+        .note {
+            width: 300px;
+            font-size: 1.5rem;
+        }
+
+    }
