@@ -43,6 +43,7 @@ h2 {
     background-color:purple;
     border: 5px solid black;
     display: none;
+    text-align: center;
 }
 
 .square {
