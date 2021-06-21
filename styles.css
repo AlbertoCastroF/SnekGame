@@ -137,5 +137,10 @@ button:active {
             width: 300px;
             font-size: 1.5rem;
         }
+    
+        #down {
+            margin-bottom: 3rem;
+            margin-top: -5rem;
+        }
 
     }
