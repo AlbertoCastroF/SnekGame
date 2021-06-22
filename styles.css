@@ -122,7 +122,7 @@ button:active {
     font-size: 2rem;
 }
 
-#portrait-controls {
+#landscape-controls {
     display: none;
 }
 
@@ -170,7 +170,7 @@ button:active {
         margin-bottom: 10px;
     }
 
-    #portrait-controls {
+    #landscape-controls {
         display: block;
     }
 
