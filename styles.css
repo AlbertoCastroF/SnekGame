@@ -169,6 +169,14 @@ button:active {
         margin-right: 2rem;
     }
 
+    /* #start {
+        width: 12rem;
+    } */
+
+    button {
+        padding: 15px 25px;
+    }
+
     #grid-container {
         margin-bottom: 10px;
     }
@@ -199,34 +207,34 @@ button:active {
     .pLeft {
         position: absolute;
         top: calc(50% - 40px);
-        left: -33vw;
+        left: -13rem;
     }
     
     .pUp {
         position: absolute;
-        left: -20vw;
+        left: -6.5rem;
     }
     
     .pDown {
         position: absolute;
         top: calc(60%);
-        left: -20vw;
+        left: -6.5rem;
     }
     
     .pRight {
         position: absolute;
         top: calc(50% - 40px);
-        left: 51vw;
+        left: 20rem;
     }
     
     .pUp2 {
         position: absolute;
-        left: 38vw;
+        left: 14rem;
     }
     
     .pDown2 {
         position: absolute;
         top: calc(62%);
-        left: 38vw;
+        left: 14rem;
     }
 }
