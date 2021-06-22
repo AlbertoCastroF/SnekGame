@@ -118,7 +118,7 @@ button:active {
 }
 
 .note {
-    width: 600px;
+    max-width: 1000px;
     font-size: 2rem;
 }
 
@@ -146,7 +146,8 @@ button:active {
         }
 
         .note {
-            width: 300px;
+            max-width: 800px;
+            padding: 1em;
             font-size: 1.5rem;
         }
     

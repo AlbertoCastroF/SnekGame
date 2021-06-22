@@ -86,10 +86,12 @@ function move() {
     const tail = snek.pop()
     squares[tail].classList.remove("snek")
     snek.unshift(snek[0] + direction)
+    console.log(snek.map(v => squares[v]))
     
     //condition to generate apple and speed increment if apple is eaten
     if (squares[snek[0]].classList.contains("apple")) {
         squares[appleIndex].classList.remove("apple")
+        squares[snek[0]].classList.add("snek")
         squares[tail].classList.add("snek")
         snek.push(tail)
         generateApple()
@@ -107,7 +109,9 @@ function move() {
 }
 
 //we read keyboards arrows to control snek
-document.addEventListener("keydown", snekControl)    
+document.addEventListener("keydown", snekControl)   
+
+
 
 //reading mobile controls
 mobUpBtn.addEventListener("click", function() {
@@ -154,12 +158,6 @@ pMobDownBtn2.addEventListener("mousedown", function() {
 })
 
 
-// const pMobLeftBtn = document.querySelector(".pLeft")
-// const pMobUpBtn = document.querySelector(".pUp")
-// const pMobDownBtn = document.querySelector(".PDown")
-// const pMobRightBtn = document.querySelector(".pRight")
-// const pMobUpBtn2 = document.querySelector(".pUp2")
-// const pMobDownBtn2 = document.querySelector(".pDown2")
 
 //apple generation function
 function generateApple() {
@@ -183,6 +181,8 @@ function snekControl() {
         direction -= 1    
     } else if(event.key === "ArrowRight"){
         direction += 1    
+    } else if (event.key === "Enter") {
+        startGame()
     }
 }
 
