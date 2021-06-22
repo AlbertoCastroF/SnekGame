@@ -9,18 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: darkslategrey;
-    color: #fff;
+    background: #161616;
+    color: #ECDBBA;
 }
 
 h1 {
-    font-size: 5rem;
-    margin: 20px;
-    margin-bottom: 60px;
+    font-size: 3rem;
+    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 30px;
 }
 

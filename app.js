@@ -133,6 +133,7 @@ generateApple()
 
 //direction assignment according to arrow pushed
 function snekControl() {
+    event.preventDefault()
     direction = 0
     if (event.key === "ArrowUp") {
         direction -= width
