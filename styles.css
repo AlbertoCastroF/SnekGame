@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #161616;
+    background: #0b0014;
     color: #ECDBBA;
 }
 
@@ -47,8 +47,9 @@ h2 {
     z-index: 1;
     padding: 20px;
     font-size: 4rem;
-    background-color:purple;
-    border: 5px solid black;
+    background-color: #c2d076;
+    border: 5px solid #001514;
+    color: #001514;
     display: none;
     text-align: center;
 }
@@ -61,11 +62,11 @@ h2 {
 }
 
 .snek {
-    background-color: green;
+    background-color: #0b0014;
 }
 
 .apple {
-    background-color: red;
+    background-color: #773344;
 }
 
 #mobile-controls {
@@ -96,20 +97,21 @@ h2 {
 button {
     padding: 20px 30px;
     margin-bottom: 20px;
-    font-size: 2rem;
-    color: navy;
+    font-size: 3rem;
+    color: #0b0014;
+    background-color: #e3b5a4;
     border-radius: 20px;
-    border: 2px solid grey;
+    border: 2px solid #d44d5c;
     
 }
 
 
 #start {
     font-size: 2rem;
-    color: navy;
+    color: #0b0014;
     padding: 20px 40px;
     border-radius: 20px;
-    border: 2px solid grey;
+    border: 2px solid #d44d5c;
     outline: none;
 }
 
