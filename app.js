@@ -128,30 +128,31 @@ mobRightBtn.addEventListener("click", function() {
 })
 
 //reading portrait mobile controls
-pMobLeftBtn.addEventListener("click", function() {
+pMobLeftBtn.addEventListener("mousedown", function() {
     direction = 0
     snekLeft()
 })
-pMobUpBtn.addEventListener("click", function() {
+pMobUpBtn.addEventListener("mousedown", function() {
     direction = 0
     snekUp()
 })
-pMobDownBtn.addEventListener("click", function() {
+pMobDownBtn.addEventListener("mousedown", function() {
     direction = 0
     snekDown()
 })
-pMobRightBtn.addEventListener("click", function() {
+pMobRightBtn.addEventListener("mousedown", function() {
     direction = 0
     snekRight()
 })
-pMobUpBtn2.addEventListener("click", function() {
+pMobUpBtn2.addEventListener("mousedown", function() {
     direction = 0
     snekUp()
 })
-pMobDownBtn2.addEventListener("click", function() {
+pMobDownBtn2.addEventListener("mousedown", function() {
     direction = 0
     snekDown()
 })
+
 
 // const pMobLeftBtn = document.querySelector(".pLeft")
 // const pMobUpBtn = document.querySelector(".pUp")
