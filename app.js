@@ -3,10 +3,16 @@ const gameover = document.getElementById("gameover")
 const grid = document.getElementById("grid-container")
 const start = document.getElementById("start")
 const scoreDisplay = document.getElementById("score")
-const mobUpBtn = document.getElementById("up")
-const mobDownBtn = document.getElementById("down")
-const mobLeftBtn = document.getElementById("left")
-const mobRightBtn = document.getElementById("right")
+const mobUpBtn = document.querySelector(".up")
+const mobDownBtn = document.querySelector(".down")
+const mobLeftBtn = document.querySelector(".left")
+const mobRightBtn = document.querySelector(".right")
+const pMobLeftBtn = document.querySelector(".pLeft")
+const pMobUpBtn = document.querySelector(".pUp")
+const pMobDownBtn = document.querySelector(".pDown")
+const pMobRightBtn = document.querySelector(".pRight")
+const pMobUpBtn2 = document.querySelector(".pUp2")
+const pMobDownBtn2 = document.querySelector(".pDown2")
 console.log(mobUpBtn)
 // array of grid elements
 let squares = []
@@ -121,6 +127,39 @@ mobRightBtn.addEventListener("click", function() {
     snekRight()
 })
 
+//reading portrait mobile controls
+pMobLeftBtn.addEventListener("click", function() {
+    direction = 0
+    snekLeft()
+})
+pMobUpBtn.addEventListener("click", function() {
+    direction = 0
+    snekUp()
+})
+pMobDownBtn.addEventListener("click", function() {
+    direction = 0
+    snekDown()
+})
+pMobRightBtn.addEventListener("click", function() {
+    direction = 0
+    snekRight()
+})
+pMobUpBtn2.addEventListener("click", function() {
+    direction = 0
+    snekUp()
+})
+pMobDownBtn2.addEventListener("click", function() {
+    direction = 0
+    snekDown()
+})
+
+// const pMobLeftBtn = document.querySelector(".pLeft")
+// const pMobUpBtn = document.querySelector(".pUp")
+// const pMobDownBtn = document.querySelector(".PDown")
+// const pMobRightBtn = document.querySelector(".pRight")
+// const pMobUpBtn2 = document.querySelector(".pUp2")
+// const pMobDownBtn2 = document.querySelector(".pDown2")
+
 //apple generation function
 function generateApple() {
     do {
@@ -149,24 +188,19 @@ function snekControl() {
 //direction assignment occording to mobile buttons
 function snekUp() {
     direction -= width
-    console.log("snekup")
 }
 function snekDown() {
     direction += width
-    console.log("snekdown")
 }
 function snekLeft() {
     direction -= 1
-    console.log("left")
 }
 function snekRight() {
     direction += 1
-    console.log("snekright")
 }
 
 //function that renders the gameover message
 function gameOver() {
-    console.log("game over")
     gameover.style.display = "block"
     
 }

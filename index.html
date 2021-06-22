@@ -9,18 +9,30 @@
     <title>Snek Game Of Doom!</title>
 </head>
 <body>
-    <h1>Snek Game!</h1>
-    <h2 >SCORE: <span id="score">0</span></h2>
-    <div id="grid-container"></div>
-    <div id="mobile-controls">
-        <button id="up">^</button>
-        <button id="left"><</button>
-        <button id="right">></button>
-        <button id="down">˅</button>
+    <div id="title-score">
+        <h1>Snek Game!</h1>
+        <h2 >SCORE: <span id="score">0</span></h2>
     </div>
+    <div id="grid-container">
+        <div id="portrait-controls">
+            <button class="pLeft"><</button>    
+            <button class="pUp">^</button>
+            <button class="pDown">˅</button>
+            <button class="pRight">></button>
+            <button class="pUp2">^</button>
+            <button class="pDown2">˅</button>
+        </div>
+    </div>
+    <div id="mobile-controls">
+        <button class="up">^</button>
+        <button class="left"><</button>
+        <button class="right">></button>
+        <button class="down">˅</button>
+    </div>
+
     <button id="start">Start/Reset</button>
     <p id="gameover">Game Over!</p>
     <script src="app.js"></script>
-    <p class="note">You can control snek using arrow buttons, press any other key, you loose. If your screen resolution is less than or equal to 1080p, mobile controls will appear so you can play without a keyboard</p>
+    <p class="note">You can control snek using arrow buttons, press any other key, you loose. If your screen resolution is less than or equal to 1080p, mobile controls will appear so you can play without a keyboard. Game has mobile controls for landscape orientation, buttons will be available on both sides of the screen</p>
 </body>
 </html>

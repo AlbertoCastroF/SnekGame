@@ -13,6 +13,12 @@ body {
     color: #ECDBBA;
 }
 
+#title-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     font-size: 3rem;
     margin: 1rem;
@@ -31,12 +37,13 @@ h2 {
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     background: black;
 }
 
 #gameover {
     position: absolute;
+    top: 35%;
     z-index: 1;
     padding: 20px;
     font-size: 4rem;
@@ -65,30 +72,30 @@ h2 {
     display: none
 }
 
-#up {
+.up {
     display: block;
     margin: 10px auto;
 }
 
-#down {
+.down {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#left {
+.left {
     margin-right: 100px;
     margin-bottom: 0;
 }
 
-#right {
+.right {
     margin-bottom: 0;
 }
 
 button {
     padding: 20px 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 2rem;
     color: navy;
     border-radius: 20px;
@@ -115,6 +122,11 @@ button:active {
     font-size: 2rem;
 }
 
+#portrait-controls {
+    display: none;
+}
+
+
 @media (max-width: 1080px) {
         h1 {
             font-size: 3rem;
@@ -138,9 +150,80 @@ button:active {
             font-size: 1.5rem;
         }
     
-        #down {
+        .down {
             margin-bottom: 3rem;
             margin-top: -5rem;
         }
 
     }
+
+@media (orientation: landscape) and (max-width: 1080px) {
+    h1,h2 {
+        margin: 0;
+    }
+
+    h1 {
+        margin-right: 2rem;
+    }
+
+    #grid-container {
+        margin-bottom: 10px;
+    }
+
+    #portrait-controls {
+        display: block;
+    }
+
+    #mobile-controls {
+        display: none;
+    }
+
+    #title-score {
+        flex-direction: row;
+        align-items: baseline;
+        margin: 1rem;
+        
+    }
+
+    #gameover {
+        top: 35%;
+    }
+
+    #start {
+        padding: 5px 40px;
+    }
+
+    .pLeft {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: -33vw;
+    }
+    
+    .pUp {
+        position: absolute;
+        left: -20vw;
+    }
+    
+    .pDown {
+        position: absolute;
+        top: calc(60%);
+        left: -20vw;
+    }
+    
+    .pRight {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: 51vw;
+    }
+    
+    .pUp2 {
+        position: absolute;
+        left: 38vw;
+    }
+    
+    .pDown2 {
+        position: absolute;
+        top: calc(62%);
+        left: 38vw;
+    }
+}
