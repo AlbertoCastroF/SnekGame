@@ -4,7 +4,7 @@ This is a project from scrimba.com frontend developer path. The game supports mo
 
 Tools used in this project:
 
-##list
+## list
 *linking your JavaScript and CSS files to your HTML file
 *setting time intervals and countdowns
 *event listeners
